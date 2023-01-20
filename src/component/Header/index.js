@@ -4,7 +4,16 @@ import "./style.css";
 function Header() {
   return (
     <div>
-      <h1>header</h1>
+      <div className="topnav">
+        <a className="active">Home</a>
+        <a>About</a>
+        <a>Contact</a>
+        <div className="search-container">
+          <form>
+            <input type="text" placeholder="Search.." name="search" />
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
